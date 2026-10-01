@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vidproj"
+version = "0.1.0"
+authors = [
+  { name = "extremelyDistant" }
+]
+description = "视频项目脚手架：一键生成标准化剪辑工程目录，批量素材重命名，适配短视频/宣传片拍摄素材管理"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+  "click>=8.0"
+]
+
+[project.scripts]
+vidproj = "vidproj:cli"
